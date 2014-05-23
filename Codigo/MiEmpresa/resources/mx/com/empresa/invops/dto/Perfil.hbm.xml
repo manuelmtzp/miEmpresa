@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 20/02/2014 09:40:10 PM by Hibernate Tools 3.4.0.CR1 -->
+<hibernate-mapping>
+   <class name="mx.com.empresa.invops.dto.Perfil" table="PERFILES">
+       
+         <id name="perfilId" type="java.lang.Long" column="perfilId" >
+            <generator class="native" />
+        </id>
+         
+        <property name="perfil" type="java.lang.String">
+            <column name="perfil" not-null="true" />
+        </property>
+        
+        <property name="estadoId" type="java.lang.String">
+            <column name="estadoId" not-null="true" />
+        </property>
+        
+        <set name="usuarios" table="usuarios"
+                inverse="true" lazy="true" fetch="select">
+            <key>
+                <column name="perfil_id" not-null="true" />
+            </key>
+            <one-to-many class="mx.com.empresa.invops.dto.Usuario" />
+        </set>
+       
+    </class>
+</hibernate-mapping>

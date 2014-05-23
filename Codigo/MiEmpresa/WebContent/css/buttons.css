@@ -1,0 +1,76 @@
+.btn-pink .ui-button-text {
+    background-color: #b40084 !important;
+  	border-color:  #b40084 !important;
+  	color: white !important;
+  	font-weight:normal !important;
+}
+
+.btn-pink {
+  	background-color: #b40084 !important;
+  	border-color: #b40084 !important;
+  	color: white !important;
+  	font-size:13px !important;
+}
+
+.btn-pink:hover,
+.btn-pink:focus,
+.btn-pink:active,
+.btn-pink.active {
+ 	background-color: #b80e6e !important;
+  	border-color: #a10c60 !important;
+  	color: white !important;
+}
+.btn-pink.disabled:hover,
+.btn-pink.disabled:focus,
+.btn-pink.disabled:active,
+.btn-pink.disabled.active,
+.btn-pink[disabled]:hover,
+.btn-pink[disabled]:focus,
+.btn-pink[disabled]:active,
+.btn-custom[disabled].active,
+fieldset[disabled] .btn-pink:hover,
+fieldset[disabled] .btn-pink:focus,
+fieldset[disabled] .btn-pink:active,
+fieldset[disabled] .btn-pink.active {
+  	background-color: #d0107c !important;
+  	border-color: #d0107c !important;
+  	color: white !important;
+}
+
+.btn-blue {
+  background-color:#5a2d7f; 
+  border-color:  #5a2d7f !important;
+  color: white !important;
+}
+
+.btn-blue .ui-button-text {
+    background-color: #5a2d7f !important;
+  	border-color:  #5a2d7f !important;
+  	color: white !important;
+  	font-weight:normal !important;
+}
+
+.btn-blue:hover,
+.btn-blue:focus,
+.btn-blue:active,
+.btn-blue.active {
+  background-color: #673492 !important;
+  border-color: #673492 !important;
+  color: white !important;
+}
+.btn-blue.disabled:hover,
+.btn-blue.disabled:focus,
+.btn-blue.disabled:active,
+.btn-blue.disabled.active,
+.btn-blue[disabled]:hover,
+.btn-blue[disabled]:focus,
+.btn-blue[disabled]:active,
+.btn-blue[disabled].active,
+fieldset[disabled] .btn-blue:hover,
+fieldset[disabled] .btn-blue:focus,
+fieldset[disabled] .btn-blue:active,
+fieldset[disabled] .btn-blue.active {
+  background-color: #763f8e !important; 
+  border-color: #763f8e !important; 
+  color: white !important;
+}

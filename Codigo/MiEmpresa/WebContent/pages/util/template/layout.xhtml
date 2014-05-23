@@ -1,0 +1,66 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" 
+          "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:p="http://primefaces.org/ui">
+
+<h:head>
+	<meta content='text/html; charset=UTF-8' http-equiv="Content-Type" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+	<link type="text/css" rel="stylesheet"
+		href="#{facesContext.externalContext.requestContextPath}/css/bootstrap.css" />
+	<link type="text/css" rel="stylesheet"
+		href="#{facesContext.externalContext.requestContextPath}/css/bootstrap-responsive.css" />
+	<link type="text/css" rel="stylesheet"
+		href="#{facesContext.externalContext.requestContextPath}/css/rsa_style.css" />
+	<link type="text/css" rel="stylesheet"
+		href="#{facesContext.externalContext.requestContextPath}/css/buttons.css" />
+	<link type="text/css" rel="stylesheet"
+		href="#{facesContext.externalContext.requestContextPath}/css/primefaces-custom.css" />
+		
+	<script type="text/javascript" language="JavaScript"
+		src="#{facesContext.externalContext.requestContextPath}/js/rsa.js"></script>
+ 
+
+	<title><ui:insert name="title"> Royal Sun Alliance </ui:insert></title>
+	<script type="text/javascript" language="JavaScript">
+
+  		//no permite el back del browser
+  	    window.history.forward();
+		
+	</script>
+</h:head>
+<h:body>
+	<div class="row">
+		<p:ajaxStatus onstart="PF('statusDialog').show();"
+			onsuccess="PF('statusDialog').hide();" />
+		<p:dialog modal="true" widgetVar="statusDialog" draggable="false" styleClass="status-dialog"
+			closable="false" resizable="false">
+			<p:graphicImage value="/img/site/load_rsa.gif" style="width:40px;" />
+		</p:dialog>
+	</div>
+	<div class="page landing">
+		<div class="col-xs-12">
+			<ui:insert name="header">
+				<ui:include src="header.xhtml" />
+			</ui:insert>
+		</div>
+		
+		<div class="container">
+			<ui:insert name="content">
+			</ui:insert>
+		</div>
+
+		<div class="col-xs-12">
+			<ui:insert name="footer">
+				<ui:include src="footer.xhtml"/>
+			</ui:insert>
+		</div>
+	</div>
+	
+</h:body>
+
+</html>
