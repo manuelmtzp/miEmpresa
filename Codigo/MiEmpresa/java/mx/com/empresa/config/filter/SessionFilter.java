@@ -34,7 +34,7 @@ public class SessionFilter implements Filter {
 		} else {
 			
 			SessionAccount account = (SessionAccount) session.getAttribute("sessionAccount");
-			if (account != null && account.getUsuario() != null) {
+			if (account != null && account.getIdUsuario() != null) {
 				if (filterChain != null) {
 					filterChain.doFilter(request, response);
 				}
